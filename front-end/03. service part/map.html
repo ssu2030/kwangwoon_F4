@@ -55,12 +55,16 @@
 </head>
 
 <body>
-   
+
     <div id="testMap"> </div>
+
     <script type="text/javascript">
+
         // 지도 구현 부분
-        var oPoint = new naver.maps.LatLng(37.5010226, 127.0396037);
-        //nhn.api.map.setDefaultPoint('LatLng');
+        var oPoint = new naver.maps.LatLng(37.3595704, 127.105399);
+        
+        nhn.api.map.setDefaultPoint('LatLng');
+        
         oMap = new naver.maps.Map('testMap', {
             point: oPoint,
             zoom: 10,
@@ -71,11 +75,12 @@
             activateTrafficMap: false,
             activateBicycleMap: false,
             minMaxLevel: [1, 14],
+
         });
     </script>
 
 
-  
+
 
 
 </body>

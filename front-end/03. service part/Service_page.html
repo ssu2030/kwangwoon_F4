@@ -6,7 +6,7 @@
 
     <link href="../01. searching part/input_font.css" rel="stylesheet" type="text/css" />
     <title>서비스 페이지</title>
-    
+
     <style>
         #testMap {
             position: absolute;
@@ -29,13 +29,14 @@
 </head>
 
 <body>
-   
+
     <div id="testMap"> </div>
     <script type="text/javascript">
         // 지도 구현 부분
-        var oPoint = new naver.maps.LatLng(37.5010226, 127.0396037);
+        var oPoint = new naver.maps.LatLng(37.619272, 127.060875);
         //nhn.api.map.setDefaultPoint('LatLng');
         oMap = new naver.maps.Map('testMap', {
+            
             point: oPoint,
             zoom: 10,
             enableWheelZoom: true,
@@ -46,10 +47,12 @@
             activateBicycleMap: false,
             minMaxLevel: [1, 14],
         });
+
+       
     </script>
 
 
-  
+
 
 
 </body>
